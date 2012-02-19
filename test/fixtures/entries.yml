@@ -1,0 +1,19 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/Fixtures.html
+
+one:
+  name: MyString
+  permalink: MyString
+  title: MyString
+  destination_action: MyString
+  destination_content_id: 1
+  destination_content_type: MyString
+  container_id: MyString
+
+two:
+  name: MyString
+  permalink: MyString
+  title: MyString
+  destination_action: MyString
+  destination_content_id: 1
+  destination_content_type: MyString
+  container_id: MyString

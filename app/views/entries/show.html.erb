@@ -1,0 +1,40 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <b>Name:</b>
+  <%= @entry.name %>
+</p>
+
+<p>
+  <b>Permalink:</b>
+  <%= @entry.permalink %>
+</p>
+
+<p>
+  <b>Title:</b>
+  <%= @entry.title %>
+</p>
+
+<p>
+  <b>Destination action:</b>
+  <%= @entry.destination_action %>
+</p>
+
+<p>
+  <b>Destination content:</b>
+  <%= @entry.destination_content_id %>
+</p>
+
+<p>
+  <b>Destination content type:</b>
+  <%= @entry.destination_content_type %>
+</p>
+
+<p>
+  <b>Container:</b>
+  <%= @entry.container_id %>
+</p>
+
+
+<%= link_to 'Edit', edit_entry_path(@entry) %> |
+<%= link_to 'Back', entries_path %>

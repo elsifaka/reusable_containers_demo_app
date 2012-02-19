@@ -1,0 +1,35 @@
+<h1>Listing entries</h1>
+
+<table>
+  <tr>
+    <th>Name</th>
+    <th>Permalink</th>
+    <th>Title</th>
+    <th>Destination action</th>
+    <th>Destination content</th>
+    <th>Destination content type</th>
+    <th>Container</th>
+    <th></th>
+    <th></th>
+    <th></th>
+  </tr>
+
+<% @entries.each do |entry| %>
+  <tr>
+    <td><%= entry.name %></td>
+    <td><%= entry.permalink %></td>
+    <td><%= entry.title %></td>
+    <td><%= entry.destination_action %></td>
+    <td><%= entry.destination_content_id %></td>
+    <td><%= entry.destination_content_type %></td>
+    <td><%= entry.container_id %></td>
+    <td><%= link_to 'Show', entry %></td>
+    <td><%= link_to 'Edit', edit_entry_path(entry) %></td>
+    <td><%= link_to 'Destroy', entry, confirm: 'Are you sure?', method: :delete %></td>
+  </tr>
+<% end %>
+</table>
+
+<br />
+
+<%= link_to 'New Entry', new_entry_path %>
