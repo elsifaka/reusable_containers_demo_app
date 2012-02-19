@@ -12,6 +12,7 @@
     <th></th>
     <th></th>
     <th></th>
+    <th></th>
   </tr>
 
 <% @entries.each do |entry| %>
@@ -23,6 +24,7 @@
     <td><%= entry.destination_content_id %></td>
     <td><%= entry.destination_content_type %></td>
     <td><%= entry.container_id %></td>
+    <td><%= link_to 'Public view', entry.permalink %></td>
     <td><%= link_to 'Show', entry %></td>
     <td><%= link_to 'Edit', edit_entry_path(entry) %></td>
     <td><%= link_to 'Destroy', entry, confirm: 'Are you sure?', method: :delete %></td>

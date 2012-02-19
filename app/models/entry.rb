@@ -23,8 +23,6 @@ class Entry < ActiveRecord::Base
           result[k.to_sym] = v
         end
       end
-    elsif self.destination_action =~ /^http/
-      result = self.destination_action
     elsif self.destination_content
       result[:controller] = self.destination_content.class.to_s.tableize
       result[:action] = "show"
@@ -32,6 +30,7 @@ class Entry < ActiveRecord::Base
     end
     if result.is_a? Hash
       result[:container_id] = self.container_id
+      result[:entry_id] = self.id
       result[:only_path] = true
     end
     result
