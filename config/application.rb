@@ -9,6 +9,7 @@ if defined?(Bundler)
   # Bundler.require(:default, :assets, Rails.env)
 end
 
+
 module ReusableContainersDemoApp
   class Application < Rails::Application
     # Settings in config/environments/* take precedence over those specified here.
@@ -16,7 +17,8 @@ module ReusableContainersDemoApp
     # -- all .rb files in that directory are automatically loaded.
 
     # Custom directories with classes and modules you want to be autoloadable.
-    # config.autoload_paths += %W(#{config.root}/extras)
+    #config.autoload_paths += %W(#{config.root}/lib/reusable_containers/)
+    require "#{config.root}/lib/reusable_containers/parameters_overrider.rb"
 
     # Only load the plugins named here, in the order given (default is alphabetical).
     # :all can be used as a placeholder for all plugins not explicitly named.
@@ -55,5 +57,7 @@ module ReusableContainersDemoApp
 
     # Version of your assets, change this if you want to expire all your assets
     config.assets.version = '1.0'
+
+    config.middleware.use ReusableContainers::ParametersOverrider
   end
 end

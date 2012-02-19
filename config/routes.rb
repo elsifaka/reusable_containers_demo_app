@@ -1,5 +1,5 @@
 ReusableContainersDemoApp::Application.routes.draw do
-  get "misc/homepage"
+  match "misc/homepage" => "misc#homepage"
 
   resources :blog_posts
 

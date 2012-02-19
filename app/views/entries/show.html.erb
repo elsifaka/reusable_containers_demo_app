@@ -35,6 +35,16 @@
   <%= @entry.container_id %>
 </p>
 
+<p>
+  <b>As parameters:</b>
+  <%= @entry.destination_as_params %>
+</p>
+
+<p>
+  <b>As URL:</b>
+  <%= url_for @entry.destination_as_params %>
+</p>
+
 
 <%= link_to 'Edit', edit_entry_path(@entry) %> |
 <%= link_to 'Back', entries_path %>

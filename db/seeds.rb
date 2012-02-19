@@ -5,3 +5,11 @@
 #
 #   cities = City.create([{ name: 'Chicago' }, { name: 'Copenhagen' }])
 #   Mayor.create(name: 'Emanuel', city: cities.first)
+
+puts "Container Creation"
+c = Container.new name: "Default", layout: "default"
+puts "OK" if c.save
+
+puts "Entry Creation"
+e = Entry.new name: "Home", title: "Homepage", permalink:"/", destination_action: "misc#homepage", container: c
+puts "OK" if e.save
