@@ -12,7 +12,6 @@ class Entry < ActiveRecord::Base
     path_cache
   end
 
-  private
   def destination_as_params
     result = HashWithIndifferentAccess.new({})
     if self.destination_action =~ /#/
@@ -37,6 +36,8 @@ class Entry < ActiveRecord::Base
     end
     result
   end
+
+  private
 
   def update_path_cache
     self.path_cache = url_for(self.destination_as_params)
