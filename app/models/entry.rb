@@ -6,8 +6,13 @@ class Entry < ActiveRecord::Base
   belongs_to :container
   belongs_to :destination_content, polymorphic: true
 
-  before_validation :update_permalink
+  before_save :update_path_cache
 
+  def destination_path
+    path_cache
+  end
+
+  private
   def destination_as_params
     result = HashWithIndifferentAccess.new({})
     if self.destination_action =~ /#/
@@ -33,7 +38,7 @@ class Entry < ActiveRecord::Base
     result
   end
 
-  def destination_path
-    url_for(self.destination_as_params)
+  def update_path_cache
+    self.path_cache = url_for(self.destination_as_params)
   end
 end
