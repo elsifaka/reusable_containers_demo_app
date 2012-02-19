@@ -2,16 +2,15 @@
 
 Simple app to test rack middleware to modify requests.
 
-Getting started
----------------
+= Getting started
 
     $ git clone https://github.com/elsifaka/reusable_containers_demo_app.git
-		$ bundle install
-		$ rake db:create
-		$ rake db:setup
-		$ rails s
+    $ bundle install
+    $ rake db:create
+    $ rake db:setup
+    $ rails s
 
 then You can manage:
-	* Entries at http://localhost:3000/entries
-  * Blog Posts at http://localhost:3000/blog_posts
+ * Entries at http://localhost:3000/entries
+ * Blog Posts at http://localhost:3000/blog_posts
 
