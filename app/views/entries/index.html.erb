@@ -1,14 +1,14 @@
-<h1>Listing entries</h1>
+<h1 class="ListTitle">Listing entries</h1>
 
-<table>
-  <tr>
+<table cellpadding="5">
+  <tr id = "text-table">
     <th>Name</th>
     <th>Permalink</th>
     <th>Title</th>
-    <th>Destination action</th>
+  <!--  <th>Destination action</th>
     <th>Destination content</th>
     <th>Destination content type</th>
-    <th>Container</th>
+    <th>Container</th> -->
     <th></th>
     <th></th>
     <th></th>
@@ -19,15 +19,17 @@
   <tr>
     <td><%= entry.name %></td>
     <td><%= entry.permalink %></td>
-    <td><%= entry.title %></td>
+   <!-- <td><%= entry.title %></td>
     <td><%= entry.destination_action %></td>
     <td><%= entry.destination_content_id %></td>
     <td><%= entry.destination_content_type %></td>
-    <td><%= entry.container_id %></td>
-    <td><%= link_to 'Public view', entry.permalink %></td>
-    <td><%= link_to 'Show', entry %></td>
-    <td><%= link_to 'Edit', edit_entry_path(entry) %></td>
-    <td><%= link_to 'Destroy', entry, confirm: 'Are you sure?', method: :delete %></td>
+    <td><%= entry.container_id %></td> -->
+    <td>
+      <%= link_to 'Public view', entry.permalink %></br>
+      <%= link_to 'Afficher', :action => 'show', :id => entry %></br>
+     <%= link_to 'Edit', edit_entry_path(entry) %></br>
+     <%= link_to 'Destroy', entry, confirm: 'Are you sure?', method: :delete %>
+  </td>
   </tr>
 <% end %>
 </table>

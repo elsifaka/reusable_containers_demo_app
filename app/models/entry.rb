@@ -7,7 +7,9 @@ class Entry < ActiveRecord::Base
   belongs_to :destination_content, polymorphic: true
 
   before_save :update_path_cache
-
+  def self.salable_items
+        find(:all)
+  end
   def destination_path
     path_cache
   end
