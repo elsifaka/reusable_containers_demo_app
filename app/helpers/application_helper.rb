@@ -8,15 +8,4 @@ module ApplicationHelper
     end
   end
 
-  def public_view?
-    request.env["public"]
-  end
-
-  def current_entry
-    request.env["current_entry"]
-  end
-
-  def current_container
-    request.env["current_container"]
-  end
 end
