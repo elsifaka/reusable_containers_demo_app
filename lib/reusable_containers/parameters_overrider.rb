@@ -17,6 +17,7 @@ module ReusableContainers
       rescue Exception => exception
         Rails.logger.error exception
       end
+      env["public"] = !!entry
       if entry
         Rails.logger.debug entry.name
         #Rails.logger.debug ActionController::Integration::Session.new(@app).url_for(e.destination_as_params)
