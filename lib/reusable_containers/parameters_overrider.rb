@@ -36,6 +36,8 @@ module ReusableContainers
         #Rails.logger.debug "params: #{env["action_dispatch.request.parameters"].inspect}"
         #Rails.logger.debug env.keys.sort.inspect
         #env["action_dispatch.request.parameters"] = env["action_dispatch.request.parameters"].merge(e.destination_as_params)
+        env["current_entry"] = entry
+        env["current_container"] = entry.container
         env.each do |k, v|
           Rails.logger.debug k.to_s + ": " + v.to_s
         end
