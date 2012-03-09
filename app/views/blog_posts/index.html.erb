@@ -1,3 +1,14 @@
+<% if public_view? %>
+  Avé
+
+  Il y a actuellement <%= @blog_posts.count %>.
+
+  <ul>
+  <% @blog_posts.each do |b| %>
+    <li><%= link_to b.entry.title, b.entry.permalink %>
+  <% end %>
+<% else %>
+
 <h1>Listing blog_posts</h1>
 
 <table>
@@ -25,3 +36,4 @@
 <br />
 
 <%= link_to 'New Blog post', new_blog_post_path %>
+<% end %>

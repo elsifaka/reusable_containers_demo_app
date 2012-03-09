@@ -1,7 +1,7 @@
 <% if public_view? %>
   <h1><%= @blog_post.title %></h1>
   <%= simple_format @blog_post.content %>
-  <%= link_to 'Edit', edit_blog_post_path(@blog_post) %> |
+  <%= link_to 'Edit', edit_blog_post_path(@blog_post) %>
 <% else %>
   <p id="notice"><%= notice %></p>
 

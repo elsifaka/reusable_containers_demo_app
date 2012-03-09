@@ -7,8 +7,9 @@
   <%= csrf_meta_tags %>
 </head>
 <body>
-  <h1>Reusable Containers Administration</h1>
+  <h1><%= link_to "Reusable Containers Administration", administration_root_path %></h1>
 
+  <%= link_to "Voir le site", root_path %>
   <%= yield %>
 
   <%= debug params %>
