@@ -1,20 +1,28 @@
-<p id="notice"><%= notice %></p>
+<% if public_view? %>
+  <h1><%= @blog_post.title %></h1>
+  <%= simple_format @blog_post.content %>
+  <%= link_to 'Edit', edit_blog_post_path(@blog_post) %> |
+<% else %>
+  <p id="notice"><%= notice %></p>
 
-<p>
-  <b>Name:</b>
-  <%= @blog_post.name %>
-</p>
+  <p>
+    <b>Name:</b>
+    <%= @blog_post.name %>
+  </p>
 
-<p>
-  <b>Title:</b>
-  <%= @blog_post.title %>
-</p>
+  <p>
+    <b>Title:</b>
+    <%= @blog_post.title %>
+  </p>
 
-<p>
-  <b>Content:</b>
-  <%= @blog_post.content %>
-</p>
+  <p>
+    <b>Content:</b>
+    <%= @blog_post.content %>
+  </p>
 
+  <p>Entry: <%= link_to "Entry", @blog_post.entry %></p>
+  <p>Publique: <%= link_to @blog_post.entry.name, @blog_post.entry.permalink %></p>
 
-<%= link_to 'Edit', edit_blog_post_path(@blog_post) %> |
-<%= link_to 'Back', blog_posts_path %>
+  <%= link_to 'Edit', edit_blog_post_path(@blog_post) %> |
+  <%= link_to 'Back', blog_posts_path %>
+<% end %>
