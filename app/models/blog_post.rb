@@ -1,6 +1,6 @@
 class BlogPost < ActiveRecord::Base
   validates_presence_of :name, :title, :content
-  has_one :entry, as: :destination_content
+  has_one :entry, as: :destination_content, dependent: :destroy
 
   after_create :associate_entry
 
