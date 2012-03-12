@@ -13,11 +13,11 @@
 
   <div class="field">
     <%= f.label :navigation %><br />
-    <%= f.select :navigation, Navigation.all.map{ |n| [n.id, n.name] } %>
+    <%= f.select :navigation, Navigation.all.map{ |n| [n.name, n.id] } %>
   </div>
   <div class="field">
     <%= f.label :entry %><br />
-    <%= f.select :entry, Entry.all.map{ |e| [e.id, e.name] } %>
+    <%= f.select :entry, Entry.all.map{ |e| [e.name, e.id] } %>
   </div>
   <div class="field">
     <%= f.label :position %><br />
