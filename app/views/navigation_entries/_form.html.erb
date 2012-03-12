@@ -12,12 +12,12 @@
   <% end %>
 
   <div class="field">
-    <%= f.label :navigation %><br />
-    <%= f.select :navigation, Navigation.all.map{ |n| [n.name, n.id] } %>
+    <%= f.label :navigation_id %><br />
+    <%= f.select :navigation_id, Navigation.all.map{ |n| [n.name, n.id] } %>
   </div>
   <div class="field">
-    <%= f.label :entry %><br />
-    <%= f.select :entry, Entry.all.map{ |e| [e.name, e.id] } %>
+    <%= f.label :entry_id %><br />
+    <%= f.select :entry_id, Entry.all.map{ |e| [e.name, e.id] } %>
   </div>
   <div class="field">
     <%= f.label :position %><br />
