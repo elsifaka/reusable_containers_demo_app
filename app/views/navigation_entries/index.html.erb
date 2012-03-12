@@ -1,0 +1,27 @@
+<h1>Listing navigation_entries</h1>
+
+<table>
+  <tr>
+    <th>Navigation</th>
+    <th>Entry</th>
+    <th>Position</th>
+    <th></th>
+    <th></th>
+    <th></th>
+  </tr>
+
+<% @navigation_entries.each do |navigation_entry| %>
+  <tr>
+    <td><%= navigation_entry.navigation %></td>
+    <td><%= navigation_entry.entry %></td>
+    <td><%= navigation_entry.position %></td>
+    <td><%= link_to 'Show', navigation_entry %></td>
+    <td><%= link_to 'Edit', edit_navigation_entry_path(navigation_entry) %></td>
+    <td><%= link_to 'Destroy', navigation_entry, confirm: 'Are you sure?', method: :delete %></td>
+  </tr>
+<% end %>
+</table>
+
+<br />
+
+<%= link_to 'New Navigation entry', new_navigation_entry_path %>

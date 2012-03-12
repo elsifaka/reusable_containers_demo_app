@@ -1,5 +1,7 @@
 ReusableContainersDemoApp::Application.routes.draw do
 
+  resources :navigation_entries
+
   scope path: "administration" do
     root to: "administration#index", as: "administration_root"
   end

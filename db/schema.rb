@@ -11,7 +11,7 @@
 #
 # It's strongly recommended to check this file into your version control system.
 
-ActiveRecord::Schema.define(:version => 20120312090829) do
+ActiveRecord::Schema.define(:version => 20120312091047) do
 
   create_table "blog_posts", :force => true do |t|
     t.string   "name"
@@ -40,6 +40,17 @@ ActiveRecord::Schema.define(:version => 20120312090829) do
     t.datetime "updated_at",               :null => false
     t.string   "path_cache"
   end
+
+  create_table "navigation_entries", :force => true do |t|
+    t.integer  "navigation_id"
+    t.integer  "entry_id"
+    t.integer  "position"
+    t.datetime "created_at",    :null => false
+    t.datetime "updated_at",    :null => false
+  end
+
+  add_index "navigation_entries", ["entry_id"], :name => "index_navigation_entries_on_entry_id"
+  add_index "navigation_entries", ["navigation_id"], :name => "index_navigation_entries_on_navigation_id"
 
   create_table "navigations", :force => true do |t|
     t.string   "name"

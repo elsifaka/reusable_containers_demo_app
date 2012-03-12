@@ -6,6 +6,9 @@ class Entry < ActiveRecord::Base
   belongs_to :container
   belongs_to :destination_content, polymorphic: true
 
+  has_many :navigation_entries
+  has_many :navigations, through: :navigation_entries
+
   before_save :update_path_cache
   def self.salable_items
         find(:all)

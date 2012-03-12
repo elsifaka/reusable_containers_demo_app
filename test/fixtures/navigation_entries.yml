@@ -1,0 +1,11 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/Fixtures.html
+
+one:
+  navigation: 
+  entry: 
+  position: 1
+
+two:
+  navigation: 
+  entry: 
+  position: 1
