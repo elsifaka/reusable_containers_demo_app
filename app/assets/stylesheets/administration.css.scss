@@ -1,3 +1,93 @@
 // Place all the styles related to the administration controller here.
 // They will automatically be included in application.css.
 // You can use Sass (SCSS) here: http://sass-lang.com/
+
+
+/* Déclaration des styles des balise */
+
+body{
+	background-color:#FEABBC;
+}
+
+h3 {
+	color:#FFFFFF;
+	font-family:"Times New Roman", Times, serif;
+	font-size:26px;
+	padding-left:2%;
+}
+
+li{
+	color:#CCCCCC;
+}
+
+a, a:visited {
+	color:#FFFFFF;
+	text-decoration:none;
+	font-size:20px;
+}
+
+a:hover{
+	color:#FF2F2F;
+	text-decoration:underline;
+	font-size:21px;	
+}
+
+/*  Style du menu pricipale */
+
+.MenuBarHorizontal{
+	font-family:Geneva, Arial, Helvetica, sans-serif;
+	font-size:28px;
+	color:#FFFFFF;
+	margin:1% 1% 1% 1%;
+}
+
+
+/* Décalration des styles des mises en page */
+.page{
+}
+
+.logo{
+	padding:2% 2% 2% 2%;
+	height:80px;
+}
+
+.saryLogo{
+	float:left;
+}
+
+.textLogo{
+	text-align:center;
+	text-transform:uppercase;
+	margin-left:4%;
+	color:#FFFFFF;
+	font-family:Verdana, Arial, Helvetica, sans-serif;
+	font-size:26px;
+}
+
+.menue{
+	padding:2% 2% 2% 2%;
+	float:right;
+}
+
+.gauche{
+	width:20%;
+	float:left;
+	border:1;
+}
+
+.droite{
+	width:75%;
+	float:right;
+	margin-left:1%;
+	border:1;
+}
+
+
+.entrer{
+	margin:2% 2% 2% 2%;
+	padding:2% 2% 2% 2%;
+	background-image:url(1.png);
+}
+
+/* Décalration des styles des textes */
+

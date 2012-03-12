@@ -1,9 +1,12 @@
 ReusableContainersDemoApp::Application.routes.draw do
+
   scope path: "administration" do
     root to: "administration#index", as: "administration_root"
   end
 
   match "misc/homepage" => "misc#homepage"
+
+  resources :navigations
 
   resources :blog_posts
 
