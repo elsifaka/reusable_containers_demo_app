@@ -1,0 +1,25 @@
+<%= form_for(@container_navigation) do |f| %>
+  <% if @container_navigation.errors.any? %>
+    <div id="error_explanation">
+      <h2><%= pluralize(@container_navigation.errors.count, "error") %> prohibited this container_navigation from being saved:</h2>
+
+      <ul>
+      <% @container_navigation.errors.full_messages.each do |msg| %>
+        <li><%= msg %></li>
+      <% end %>
+      </ul>
+    </div>
+  <% end %>
+
+  <div class="field">
+    <%= f.label :container_id %><br />
+    <%= f.select :container_id, Container.all.map{ |c| [c.name, c.id] } %>
+  </div>
+  <div class="field">
+    <%= f.label :navigation_id %><br />
+    <%= f.select :navigation_id, Navigation.all.map{ |n| [n.name, n.id] } %>
+  </div>
+  <div class="actions">
+    <%= f.submit %>
+  </div>
+<% end %>

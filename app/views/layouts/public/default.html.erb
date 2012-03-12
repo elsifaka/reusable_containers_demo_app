@@ -12,6 +12,9 @@
   -->
   <h1><%= link_to "Reusable Containers Vue Publique", root_path %></h1>
 
+  <% unless current_container.navigations.empty? %>
+    <%= render current_container.navigations %>
+  <% end %>
   <%= yield %>
 
 

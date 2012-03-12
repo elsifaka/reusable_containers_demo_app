@@ -11,7 +11,7 @@
 #
 # It's strongly recommended to check this file into your version control system.
 
-ActiveRecord::Schema.define(:version => 20120312091047) do
+ActiveRecord::Schema.define(:version => 20120312091814) do
 
   create_table "blog_posts", :force => true do |t|
     t.string   "name"
@@ -20,6 +20,16 @@ ActiveRecord::Schema.define(:version => 20120312091047) do
     t.datetime "created_at", :null => false
     t.datetime "updated_at", :null => false
   end
+
+  create_table "container_navigations", :force => true do |t|
+    t.integer  "container_id"
+    t.integer  "navigation_id"
+    t.datetime "created_at",    :null => false
+    t.datetime "updated_at",    :null => false
+  end
+
+  add_index "container_navigations", ["container_id"], :name => "index_container_navigations_on_container_id"
+  add_index "container_navigations", ["navigation_id"], :name => "index_container_navigations_on_navigation_id"
 
   create_table "containers", :force => true do |t|
     t.string   "name"

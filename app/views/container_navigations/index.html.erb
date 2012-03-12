@@ -1,0 +1,25 @@
+<h1>Listing container_navigations</h1>
+
+<table>
+  <tr>
+    <th>Container</th>
+    <th>Navigation</th>
+    <th></th>
+    <th></th>
+    <th></th>
+  </tr>
+
+<% @container_navigations.each do |container_navigation| %>
+  <tr>
+    <td><%= container_navigation.container %></td>
+    <td><%= container_navigation.navigation %></td>
+    <td><%= link_to 'Show', container_navigation %></td>
+    <td><%= link_to 'Edit', edit_container_navigation_path(container_navigation) %></td>
+    <td><%= link_to 'Destroy', container_navigation, confirm: 'Are you sure?', method: :delete %></td>
+  </tr>
+<% end %>
+</table>
+
+<br />
+
+<%= link_to 'New Container navigation', new_container_navigation_path %>
