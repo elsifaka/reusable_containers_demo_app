@@ -5,32 +5,7 @@
 
 /* Déclaration des styles des balise */
 
-body{
-	background-color:#FEABBC;
-}
 
-h3 {
-	color:#FFFFFF;
-	font-family:"Times New Roman", Times, serif;
-	font-size:26px;
-	padding-left:2%;
-}
-
-li{
-	color:#CCCCCC;
-}
-
-a, a:visited {
-	color:#FFFFFF;
-	text-decoration:none;
-	font-size:20px;
-}
-
-a:hover{
-	color:#FF2F2F;
-	text-decoration:underline;
-	font-size:21px;	
-}
 
 /*  Style du menu pricipale */
 
@@ -43,7 +18,12 @@ a:hover{
 
 
 /* Décalration des styles des mises en page */
+.body{
+  background-color : #FFFFFF;
+}
+
 .page{
+  background-color : #EE165A;
 }
 
 .logo{
