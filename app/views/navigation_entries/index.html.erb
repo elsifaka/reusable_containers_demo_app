@@ -19,8 +19,8 @@
 
 <% @navigation_entries.each do |navigation_entry| %>
   <tr>
-    <td><%= navigation_entry.navigation %></td>
-    <td><%= navigation_entry.entry %></td>
+    <td><%= navigation_entry.navigation.name %></td>
+    <td><%= navigation_entry.entry.name %></td>
     <td><%= navigation_entry.position %></td>
     <td><%= link_to 'Show', navigation_entry %></td>
     <td><%= link_to 'Edit', edit_navigation_entry_path(navigation_entry) %></td>
