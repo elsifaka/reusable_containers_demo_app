@@ -11,8 +11,8 @@
 
 <% @container_navigations.each do |container_navigation| %>
   <tr>
-    <td><%= container_navigation.container %></td>
-    <td><%= container_navigation.navigation %></td>
+    <td><%= container_navigation.container.name %></td>
+    <td><%= container_navigation.navigation.name %></td>
     <td><%= link_to 'Show', container_navigation %></td>
     <td><%= link_to 'Edit', edit_container_navigation_path(container_navigation) %></td>
     <td><%= link_to 'Destroy', container_navigation, confirm: 'Are you sure?', method: :delete %></td>
