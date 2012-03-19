@@ -1,22 +1,65 @@
 // Place all the styles related to the entries controller here.
-.vatany
-{
- 	width:100%;
-	height:auto;
-	margin:0 auto;
-	float:none;
-	background:url(../images/body.png) #d5e0e6 0px 126px repeat-x;
+body {
+	margin: 10px;
+	font: 0.8em "Trebuchet MS", Georgia, Arial;
+	color: #565D79;
+	background: #ffffff ;
+	}
+#content{
+	position: relative;
+	width: 800px;
+	margin: 0 auto;
+	border: 2px solid #003399;
 }
 
-.ListTitle
-{
- color: #9E3DAE;
- font-weight: bold;
- font-size: larger;
+.logo{
+	padding:2% 2% 2% 2%;
+	height:80px;
 }
-#text-table
-{
-  color : #9E3DAE;
+
+.saryLogo{
+	float:left;
 }
+
+.textLogo{
+	text-align:center;
+	text-transform:uppercase;
+	margin-left:4%;
+	color:#E63D6D;
+	font-family:Verdana, Arial, Helvetica, sans-serif;
+	font-size:26px;
+}
+
+
+.gauche{
+	width:20%;
+	float:left;
+	border:1;
+}
+
+.droite{
+	width:80%;
+	float:right;
+	margin-left:1%;
+	border:1;
+}
+
+
+.entrer{
+	margin:1% 2% 2% 2%;
+	padding:1% 2% 2% 2%;
+  	font-weight: bold;
+    line-height: 26px;
+    font-variant: small-caps;
+    color:#E63D6D;
+}
+
+.new{
+  background: url(menu_bt.png) no-repeat center;
+  text-align: center;
+  text-color: #ffffff;
+}
+
+
 // They will automatically be included in application.css.
 // You can use Sass (SCSS) here: http://sass-lang.com/

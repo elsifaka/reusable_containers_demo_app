@@ -18,16 +18,22 @@
 
 
 /* Décalration des styles des mises en page */
-.vatany{
-	width:100%;
-	height:auto;
-	margin:0 auto;
-	float:none;
-
-}	
+body {
+	margin: 10px;
+	font: 0.8em "Trebuchet MS", Georgia, Arial;
+	color: #565D79;
+	background: #ffffff ;
+	}
+#content{
+	position: relative;
+	width: 800px;
+	margin: 0 auto;
+	border: 2px solid #003399;
+}
 
 .page{
-  background-color : #EE165A;
+  background-color : #D8DAF5;
+  border:0;
 }
 
 .logo{
@@ -43,24 +49,21 @@
 	text-align:center;
 	text-transform:uppercase;
 	margin-left:4%;
-	color:#FFFFFF;
+	color:#E63D6D;
 	font-family:Verdana, Arial, Helvetica, sans-serif;
 	font-size:26px;
 }
 
-.menue{
-	padding:2% 2% 2% 2%;
-	float:right;
-}
+
 
 .gauche{
-	width:20%;
+	width:25%;
 	float:left;
 	border:1;
 }
 
 .droite{
-	width:75%;
+	width:70%;
 	float:right;
 	margin-left:1%;
 	border:1;
@@ -73,6 +76,7 @@
   	font-weight: bold;
     line-height: 26px;
     font-variant: small-caps;
+    color:#E63D6D;
 }
 
 

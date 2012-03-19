@@ -1,0 +1,22 @@
+// Place all the styles related to the entries controller here.
+.vatany
+{
+ 	width:100%;
+	height:auto;
+	margin:0 auto;
+	float:none;
+	background:url(../images/body.png) #d5e0e6 0px 126px repeat-x;
+}
+
+.ListTitle
+{
+ color: #9E3DAE;
+ font-weight: bold;
+ font-size: larger;
+}
+#text-table
+{
+  color : #9E3DAE;
+}
+// They will automatically be included in application.css.
+// You can use Sass (SCSS) here: http://sass-lang.com/
