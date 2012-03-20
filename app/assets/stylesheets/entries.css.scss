@@ -1,36 +1,11 @@
 // Place all the styles related to the entries controller here.
-body {
-	margin: 10px;
-	font: 0.8em "Trebuchet MS", Georgia, Arial;
-	color: #565D79;
-	background: url ("body.png") repeat ;
-	}
+
 #content{
 	position: relative;
 	width: 800px;
-  height: 500px;
 	margin: 0 auto;
 	border: 2px solid #003399;
 }
-
-.logo{
-	padding:2% 2% 2% 2%;
-	height:80px;
-}
-
-.saryLogo{
-	float:left;
-}
-
-.textLogo{
-	text-align:center;
-	text-transform:uppercase;
-	margin-left:4%;
-	color:#E63D6D;
-	font-family:Verdana, Arial, Helvetica, sans-serif;
-	font-size:26px;
-}
-
 
 .gauche{
 	width:15%;

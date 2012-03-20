@@ -1,22 +1,11 @@
-<h1>New entry</h1>
-<html xmlns="http://www.w3.org/1999/xhtml">
-<head>
-<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
-<title>Francia</title>
-</head>
-<body >
-  <div id="content">
+<div id="content">
     <div class="logo">
-      <div class="saryLogo">
-			<img src="" width="100" height="100"  />
-      </div>
       <div class="textLogo">
            Administration
       </div>
     </div>
 
-    
-    <div class="gauche">
+   <div class="gauche">
       <div class="entrer">
             <ul>
             	<li> <a href="entries" target="_blank">Entries</a> </li>
@@ -28,12 +17,11 @@
             </ul>
           </div>
          </div>
-       </div>
-        <div class="droite">
+<div class="droite">
+
+     <h3>New entry</h3>
+
           <%= render 'form' %>
-          <div class="new">
-            <%= link_to 'Back', entries_path %>
-         </div>
-</div>
-</body>
-</html>
+        <div class="new">
+              <%= link_to 'Back', entries_path %>
+        </div>
