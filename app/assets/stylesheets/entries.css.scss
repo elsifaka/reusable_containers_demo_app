@@ -3,11 +3,12 @@ body {
 	margin: 10px;
 	font: 0.8em "Trebuchet MS", Georgia, Arial;
 	color: #565D79;
-	background: #ffffff ;
+	background: url ("body.png") repeat ;
 	}
 #content{
 	position: relative;
-	width: 900;
+	width: 800px;
+  height: 500px;
 	margin: 0 auto;
 	border: 2px solid #003399;
 }
@@ -34,8 +35,7 @@ body {
 .gauche{
 	width:15%;
 	float:left;
-	border:1;
-}
+	border:1;}
 
 .droite{
 	width:85%;
@@ -54,6 +54,7 @@ body {
 }
 
 .new{
+  
   background: url(menu_bt.png) no-repeat center;
   text-align: center;
   text-color: #ffffff;
