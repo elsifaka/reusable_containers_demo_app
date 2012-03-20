@@ -4,25 +4,40 @@
   <%= link_to 'Edit', edit_blog_post_path(@blog_post) %>
 <% else %>
   <p id="notice"><%= notice %></p>
+ <div id="content">
+       <div class="logo">
+            <div class="saryLogo">
+			          <img src="" width="100" height="100"  />
+           </div>
+          <div class="textLogo">
+             Administration
+          </div>
+      </div>
 
-  <p>
-    <b>Name:</b>
-    <%= @blog_post.name %>
-  </p>
+        <div class="gauche">
+        
+         </div>
+              <div class="droite">
+               <p>
+                  <b>Name:</b>
+                  <%= @blog_post.name %>
+               </p>
 
-  <p>
-    <b>Title:</b>
-    <%= @blog_post.title %>
-  </p>
+               <p>
+                  <b>Title:</b>
+                  <%= @blog_post.title %>
+              </p>
 
-  <p>
-    <b>Content:</b>
-    <%= @blog_post.content %>
-  </p>
+              <p>
+                  <b>Content:</b>
+                  <%= @blog_post.content %>
+              </p>
 
-  <p>Entry: <%= link_to "Entry", @blog_post.entry %></p>
-  <p>Publique: <%= link_to @blog_post.entry.name, @blog_post.entry.permalink %></p>
+              <p>Entry: <%= link_to "Entry", @blog_post.entry %></p>
+              <p>Publique: <%= link_to @blog_post.entry.name, @blog_post.entry.permalink %></p>
 
-  <%= link_to 'Edit', edit_blog_post_path(@blog_post) %> |
-  <%= link_to 'Back', blog_posts_path %>
-<% end %>
+             <%= link_to 'Edit', edit_blog_post_path(@blog_post) %> |
+             <%= link_to 'Back', blog_posts_path %>
+            <% end %>
+        </div>
+</div>
