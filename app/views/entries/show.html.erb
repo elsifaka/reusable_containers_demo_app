@@ -18,54 +18,56 @@
             </ul>
           </div>
          </div>
-<div class="droite">
+   <div class="droite">
 
-<p>
-  <b>Name:</b>
-  <%= @entry.name %>
-</p>
+       <p>
+         <b>Name:</b>
+         <%= @entry.name %>
+       </p>
 
-<p>
-  <b>Permalink:</b>
-  <%= @entry.permalink %>
-</p>
+      <p>
+        <b>Permalink:</b>
+        <%= @entry.permalink %>
+      </p>
 
-<p>
-  <b>Title:</b>
-  <%= @entry.title %>
-</p>
+      <p>
+        <b>Title:</b>
+        <%= @entry.title %>
+     </p>
 
-<p>
-  <b>Destination action:</b>
-  <%= @entry.destination_action %>
-</p>
+     <p>
+       <b>Destination action:</b>
+       <%= @entry.destination_action %>
+    </p>
 
-<p>
-  <b>Destination content:</b>
-  <%= @entry.destination_content_id %>
-</p>
+    <p>
+      <b>Destination content:</b>
+      <%= @entry.destination_content_id %>
+    </p>
 
-<p>
-  <b>Destination content type:</b>
-  <%= @entry.destination_content_type %>
-</p>
+    <p>
+      <b>Destination content type:</b>
+      <%= @entry.destination_content_type %>
+    </p>
 
-<p>
-  <b>Container:</b>
-  <%= @entry.container_id %>
-</p>
+    <p>
+      <b>Container:</b>
+      <%= @entry.container_id %>
+    </p>
 
-<p>
-  <b>As parameters:</b>
-  <%= @entry.destination_as_params %>
-</p>
+    <p>
+      <b>As parameters:</b>
+      <%= @entry.destination_as_params %>
+    </p>
 
-<p>
-  <b>As URL:</b>
-  <%= url_for @entry.destination_as_params %>
-</p>
+    <p>
+      <b>As URL:</b>
+      <%= url_for @entry.destination_as_params %>
+    </p>
 
-<%= link_to 'Public view', @entry.permalink %> |
-<%= link_to 'Edit', edit_entry_path(@entry) %> |
-<%= link_to 'Back', entries_path %>
+      <%= link_to 'Public view', @entry.permalink %> |
+      <%= link_to 'Edit', edit_entry_path(@entry) %> |
+      <%= link_to 'Back', entries_path %>
+  </div>
+</div>
 

@@ -1,18 +1,15 @@
 
-<body >
+
   <div id="content">
     <div class="logo">
       <div class="saryLogo">
-			<img src="" width="100" height="100"  />
+		  	<img src="" width="100" height="100"  />
       </div>
       <div class="textLogo">
            Administration
       </div>
     </div>
-      <div>
-        <h1>Editing entry</h1>
-      </div>
-    
+        
     <div class="gauche">
       <div class="entrer">
             <ul>
@@ -23,14 +20,16 @@
             	<li> <a href="navigation_entries" target="_blank">Navigation entries</a> </li>
               <li> <a href="container_navigations" target="_blank">Container navigation</a> </li>					  	
             </ul>
-          </div>
-         </div>
-             </div>
-              <div class="droite">
-                <%= render 'form' %>
-              </div>
+      </div>
+    </div>
+            
+           <div class="droite">
+                 <h3>Editing entry</h3>
 
-<%= link_to 'Show', @entry %> |
-<%= link_to 'Back', entries_path %>
-</div>
-</body>
+                 <%= render 'form' %>
+
+                <%= link_to 'Show', @entry %> |
+                <%= link_to 'Back', entries_path %>
+           </div>
+  </div>
+

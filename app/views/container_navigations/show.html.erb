@@ -18,17 +18,20 @@
             </ul>
           </div>
          </div>
-<div class="droite">
-<p>
-  <b>Container:</b>
-  <%= @container_navigation.container.name %>
-</p>
+          <div class="droite">
+            <h3> Container navigation </h3>
+            <p>
+               <b>Container:</b>
+               <%= @container_navigation.container.name %>
+           </p>
 
-<p>
-  <b>Navigation:</b>
-  <%= @container_navigation.navigation.name %>
-</p>
+           <p>
+               <b>Navigation:</b>
+               <%= @container_navigation.navigation.name %>
+          </p>
 
 
-<%= link_to 'Edit', edit_container_navigation_path(@container_navigation) %> |
-<%= link_to 'Back', container_navigations_path %>
+              <%= link_to 'Edit', edit_container_navigation_path(@container_navigation) %> |
+              <%= link_to 'Back', container_navigations_path %>
+          </div>
+  </div>
