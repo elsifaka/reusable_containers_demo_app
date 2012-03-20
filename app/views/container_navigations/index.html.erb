@@ -1,4 +1,3 @@
-<body>
  <div id="content">
     <div class="logo">
       <div class="textLogo">
@@ -18,30 +17,31 @@
             </ul>
           </div>
          </div>
-<div class="droite">
-<h3>List container navigations</h3>
+        <div class="droite">
+            <h3>List container navigations</h3>
 
-<table>
-  <tr>
-    <th>Container</th>
-    <th>Navigation</th>
-    <th></th>
-    <th></th>
-    <th></th>
-  </tr>
+            <table>
+             <tr>
+                <th>Container</th>
+                <th>Navigation</th>
+               <th></th>
+               <th></th>
+               <th></th>
+               </tr>
 
-<% @container_navigations.each do |container_navigation| %>
-  <tr>
-    <td><%= container_navigation.container.name %></td>
-    <td><%= container_navigation.navigation.name %></td>
-    <td><%= link_to 'Show', container_navigation %></td>
-    <td><%= link_to 'Edit', edit_container_navigation_path(container_navigation) %></td>
-    <td><%= link_to 'Destroy', container_navigation, confirm: 'Are you sure?', method: :delete %></td>
-  </tr>
-<% end %>
-</table>
+              <% @container_navigations.each do |container_navigation| %>
+            <tr>
+               <td><%= container_navigation.container.name %></td>
+               <td><%= container_navigation.navigation.name %></td>
+               <td><%= link_to 'Show', container_navigation %></td>
+               <td><%= link_to 'Edit', edit_container_navigation_path(container_navigation) %></td>
+               <td><%= link_to 'Destroy', container_navigation, confirm: 'Are you sure?', method: :delete %></td>
+           </tr>
+              <% end %>
+        </table>
 
 <br />
 
-<%= link_to 'New Container navigation', new_container_navigation_path %>
-</body>
+        <%= link_to 'New Container navigation', new_container_navigation_path %>
+        </div>
+  </div>
