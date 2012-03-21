@@ -18,12 +18,12 @@
 
 
 /* Décalration des styles des mises en page */
-/*body {
+body {
 	margin: 10px;
 	font: 0.8em "Trebuchet MS", Georgia, Arial;
 	color: #565D79;
-	background: url("body.png") repeat ;
-	}*/
+	background: url("") repeat ;
+	}
 #content{
 	position: relative;
 	width: 800px;
@@ -36,6 +36,7 @@
 .logo{
 	padding:2% 2% 2% 2%;
 	height:80px;
+  background: url("back_body.png");
 }
 
 .saryLogo{
@@ -49,6 +50,7 @@
 	color:#E63D6D;
 	font-family:Verdana, Arial, Helvetica, sans-serif;
 	font-size:26px;
+
 }
 
 
@@ -74,6 +76,15 @@
     line-height: 26px;
     font-variant: small-caps;
     color:#E63D6D;
+}
+.ambany{
+  width: 100%;
+  background: url("main_bottom.png");
+
+}
+
+/*h1,h2,h3,h4,h5,h6 {
+  color: #E6E3E3;
 }
 
 
