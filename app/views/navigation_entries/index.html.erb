@@ -23,14 +23,12 @@
          
       <div class="droite">
       <h3>Listing navigation entries</h3>
-        <table>
+        <table border=1>
          <tr>
            <th>Navigation</th>
            <th>Entry</th>
            <th>Position</th>
-           <th></th>
-           <th></th>
-           <th></th>
+           <th>Actions</th>
          </tr>
 
       <% @navigation_entries.each do |navigation_entry| %>
@@ -38,9 +36,11 @@
            <td><%= navigation_entry.navigation.name %></td>
            <td><%= navigation_entry.entry.name %></td>
            <td><%= navigation_entry.position %></td>
-           <td><%= link_to 'Show', navigation_entry %></td>
-           <td><%= link_to 'Edit', edit_navigation_entry_path(navigation_entry) %></td>
-           <td><%= link_to 'Destroy', navigation_entry, confirm: 'Are you sure?', method: :delete %></td>
+           <td>
+             <%= link_to 'Show', navigation_entry %></br>
+             <%= link_to 'Edit', edit_navigation_entry_path(navigation_entry) %></br>
+             <%= link_to 'Destroy', navigation_entry, confirm: 'Are you sure?', method: :delete %>
+       </td>
          </tr>
           <% end %>
       </table>

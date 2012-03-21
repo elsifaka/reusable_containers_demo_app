@@ -20,22 +20,22 @@
         <div class="droite">
             <h3>List container navigations</h3>
 
-            <table>
+            <table border=1>
              <tr>
                 <th>Container</th>
                 <th>Navigation</th>
-               <th></th>
-               <th></th>
-               <th></th>
+               <th>Actions</th>
                </tr>
 
               <% @container_navigations.each do |container_navigation| %>
             <tr>
                <td><%= container_navigation.container.name %></td>
                <td><%= container_navigation.navigation.name %></td>
-               <td><%= link_to 'Show', container_navigation %></td>
-               <td><%= link_to 'Edit', edit_container_navigation_path(container_navigation) %></td>
-               <td><%= link_to 'Destroy', container_navigation, confirm: 'Are you sure?', method: :delete %></td>
+               <td>
+                 <%= link_to 'Show', container_navigation %></br>
+                 <%= link_to 'Edit', edit_container_navigation_path(container_navigation) %></br>
+                 <%= link_to 'Destroy', container_navigation, confirm: 'Are you sure?', method: :delete %>
+              </td>
            </tr>
               <% end %>
         </table>

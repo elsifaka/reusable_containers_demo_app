@@ -21,22 +21,23 @@
 
             <h3>Listing containers</h3>
 
-            <table>
+            <table border=1>
               <tr>
                   <th>Name</th>
                   <th>Layout</th>
-                  <th></th>
-                  <th></th>
-                  <th></th>
+                  <th>Actions</th>
+                
              </tr>
 
               <% @containers.each do |container| %>
             <tr>
               <td><%= container.name %></td>
               <td><%= container.layout %></td>
-              <td><%= link_to 'Show', container %></td>
-              <td><%= link_to 'Edit', edit_container_path(container) %></td>
-              <td><%= link_to 'Destroy', container, confirm: 'Are you sure?', method: :delete %></td>
+              <td>
+                <%= link_to 'Show', container %></br>
+                <%= link_to 'Edit', edit_container_path(container) %></br>
+                <%= link_to 'Destroy', container, confirm: 'Are you sure?', method: :delete %>
+             </td>
            </tr>
               <% end %>
           </table>

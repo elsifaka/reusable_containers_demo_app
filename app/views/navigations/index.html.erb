@@ -25,22 +25,23 @@
 
 <h3>Listing navigations</h3>
 
-<table>
+<table border=1>
   <tr>
     <th>Name</th>
     <th>Description</th>
-    <th></th>
-    <th></th>
-    <th></th>
+    <th>Actions</th>
+  
   </tr>
 
 <% @navigations.each do |navigation| %>
   <tr>
     <td><%= navigation.name %></td>
     <td><%= navigation.description %></td>
-    <td><%= link_to 'Show', navigation %></td>
-    <td><%= link_to 'Edit', edit_navigation_path(navigation) %></td>
-    <td><%= link_to 'Destroy', navigation, confirm: 'Are you sure?', method: :delete %></td>
+    <td>
+        <%= link_to 'Show', navigation %></br>
+        <%= link_to 'Edit', edit_navigation_path(navigation) %></br>
+        <%= link_to 'Destroy', navigation, confirm: 'Are you sure?', method: :delete %>
+    </td>
   </tr>
 <% end %>
 </table>
