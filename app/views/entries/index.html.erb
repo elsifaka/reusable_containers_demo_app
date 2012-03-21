@@ -50,7 +50,7 @@
     <td><%= entry.container_id %></td> 
     <td>
       <%= link_to 'Public view', entry.permalink %>
-      <%= link_to 'Afficher', :action => 'show', :id => entry %>
+      <%= link_to 'Show', :action => 'show', :id => entry %>
      <%= link_to 'Edit', edit_entry_path(entry) %>
      <%= link_to 'Destroy', entry, confirm: 'Are you sure?', method: :delete %>
   </td>
