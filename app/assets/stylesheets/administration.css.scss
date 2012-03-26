@@ -21,13 +21,11 @@
 body {
 	margin: 10px;
 	font: 0.8em "Trebuchet MS", Georgia, Arial;
-	color: #565D79;
-	background: url("") repeat ;
 	}
 #content{
 	position: relative;
 	width: 800px;
-  height: 500px;
+  height: 550px;
 	margin: 0 ;
 	border: none;
 }
@@ -41,6 +39,7 @@ body {
 
 .saryLogo{
 	float:left;
+  background: url("logo.png");
 }
 
 .textLogo{
@@ -78,25 +77,18 @@ body {
     font-variant: small-caps;
     color:#E63D6D;
 }
-.ambany{
-  width: 100%;
-  background: url("main_bottom.png");
-
-}
-
 
 table {
   border: medium solid #BCBBBB;
   border-collapse: collapse;
-  width: 50%;
+  width: 100%;
 }
 th {
   font-family: monospace;
   border: thin solid #BCBBBB;
   width: 50%;
   padding: 5px;
-  background-color: #D0E3FA;
-  background-image: url(main_bottom.png);
+  background-color: #E6E6E6;
 }
 td {
   font-family: sans-serif;

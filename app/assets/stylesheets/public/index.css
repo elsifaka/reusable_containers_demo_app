@@ -1,0 +1,34 @@
+
+body{
+ margin: 0px;
+ background-color: #FE2E64;
+}
+
+.entete{
+ margin: 20px 20px 10px 20px;
+ background-color: #FFFFFF;
+ height: 140px;
+ 
+}
+
+.corps{
+ margin: 0px 20px 20px 20px;
+ background-color: #FFFFFF;
+ height: auto;
+ 
+}
+
+
+.sary{
+	float:left;
+}
+
+
+.menu{
+	margin-left:4%;
+	color:#E63D6D;
+	font-family:Verdana, Arial, Helvetica, sans-serif;
+	font-size:20px;
+
+
+}

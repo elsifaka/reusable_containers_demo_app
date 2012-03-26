@@ -1,5 +1,7 @@
 ReusableContainersDemoApp::Application.routes.draw do
 
+  resources :partenaires
+
   resources :container_navigations
 
   resources :navigation_entries

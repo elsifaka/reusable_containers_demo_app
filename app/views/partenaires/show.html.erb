@@ -1,0 +1,34 @@
+<% if public_view? %>
+  <h1><%= @partenaire.titre %></h1>
+  <%= simple_format @partenaire.content %>
+  <%= link_to 'Edit', edit_partenaire_path(@partenaire) %>
+<% else %>
+
+
+<p id="notice"><%= notice %></p>
+
+
+<p>
+  <b>Titre:</b>
+  <%= @partenaire.titre %>
+</p>
+
+<p>
+  <b>Name:</b>
+  <%= @partenaire.name %>
+</p>
+
+<p>
+  <b>Logo:</b>
+  <%= @partenaire.logo %>
+</p>
+
+ <p>Entry: <%= link_to "Entry", @partenaire.entry %></p>
+              <p>Publique: <%= link_to @partenaire.entry, @partenaire.entry %></p>
+
+
+<%= link_to 'Edit', edit_partenaire_path(@partenaire) %> |
+<%= link_to 'Back', partenaires_path %>
+
+  <% end %>
+
