@@ -21,7 +21,7 @@
   </div>
   <div class="field">
     <%= f.label :logo %><br />
-    <%= f.text_field :logo %>
+    <%= file_field_tag 'attachments[1][file]', :size => 30, :id => nil  -%>
   </div>
   <div class="actions">
     <%= f.submit %>

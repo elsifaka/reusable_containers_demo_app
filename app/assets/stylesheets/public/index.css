@@ -21,6 +21,8 @@ body{
 
 .sary{
 	float:left;
+  margin: 20px 20px 20px 20px ;
+  background: url("../public/logo.png");
 }
 
 
@@ -31,4 +33,38 @@ body{
 	font-size:20px;
 
 
+}
+
+
+.menu li a {
+  display: block ;
+  color: #000 ;
+  line-height: 1em ;
+  text-align: center ;
+  text-decoration: none ;
+  padding: 4px 0 ;
+}
+
+.menu li a:hover, .menu li a:focus, .menu li a:active {
+  background: #FE2E64 ;
+  text-decoration: underline ;
+}
+
+
+.menu ul li{
+  margin: 20px 20px 20px 20px ;
+  float:left;
+  margin-right:10px;
+  list-style:none;
+
+}
+
+footer{
+background-color:#D8D8D8;
+}
+
+.ensemble{
+  height:90%;
+  border:1px;
+  border-color:#fff;
 }
