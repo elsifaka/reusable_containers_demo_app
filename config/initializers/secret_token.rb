@@ -4,4 +4,4 @@
 # If you change this key, all old signed cookies will become invalid!
 # Make sure the secret is at least 30 characters and all random,
 # no regular words or you'll be exposed to dictionary attacks.
-ReusableContainersDemoApp::Application.config.secret_token = '5707d0a92aa84433a57d5f2d48b04e96b016569ed3b2e027cc16de6776c2da23c84820df96c4994cf98a21350b79f77f287c882209aa6611a89d173496dbf51a'
+Appblue::Application.config.secret_token = '36931d82e67af335537094b9fb5f4fd89c9f282eca288b23470c61951c11cc2425bda6524094a629f9be540783b3a7417d7107b560f37e081f4963fa6c6e3fcd'

@@ -11,68 +11,28 @@
 #
 # It's strongly recommended to check this file into your version control system.
 
-ActiveRecord::Schema.define(:version => 20120323163204) do
+ActiveRecord::Schema.define(:version => 20011231215804) do
 
-  create_table "blog_posts", :force => true do |t|
-    t.string   "name"
-    t.string   "title"
-    t.text     "content"
-    t.datetime "created_at", :null => false
-    t.datetime "updated_at", :null => false
-  end
-
-  create_table "container_navigations", :force => true do |t|
-    t.integer  "container_id"
-    t.integer  "navigation_id"
-    t.datetime "created_at",    :null => false
-    t.datetime "updated_at",    :null => false
-  end
-
-  add_index "container_navigations", ["container_id"], :name => "index_container_navigations_on_container_id"
-  add_index "container_navigations", ["navigation_id"], :name => "index_container_navigations_on_navigation_id"
-
-  create_table "containers", :force => true do |t|
-    t.string   "name"
-    t.string   "layout"
-    t.datetime "created_at", :null => false
-    t.datetime "updated_at", :null => false
-  end
-
-  create_table "entries", :force => true do |t|
-    t.string   "name"
-    t.string   "permalink"
-    t.string   "title"
-    t.string   "destination_action"
-    t.integer  "destination_content_id"
-    t.string   "destination_content_type"
-    t.string   "container_id"
-    t.datetime "created_at",               :null => false
-    t.datetime "updated_at",               :null => false
-    t.string   "path_cache"
-  end
-
-  create_table "navigation_entries", :force => true do |t|
-    t.integer  "navigation_id"
-    t.integer  "entry_id"
-    t.integer  "position"
-    t.datetime "created_at",    :null => false
-    t.datetime "updated_at",    :null => false
-  end
-
-  add_index "navigation_entries", ["entry_id"], :name => "index_navigation_entries_on_entry_id"
-  add_index "navigation_entries", ["navigation_id"], :name => "index_navigation_entries_on_navigation_id"
-
-  create_table "navigations", :force => true do |t|
-    t.string   "name"
-    t.string   "description"
+  create_table "articles", :force => true do |t|
+    t.string   "titre"
+    t.text     "description"
+    t.integer  "id_rubrique"
     t.datetime "created_at",  :null => false
     t.datetime "updated_at",  :null => false
   end
 
-  create_table "partenaires", :force => true do |t|
+  create_table "rubriques", :force => true do |t|
     t.string   "titre"
+    t.text     "description"
+    t.integer  "active"
+    t.datetime "created_at",  :null => false
+    t.datetime "updated_at",  :null => false
+  end
+
+  create_table "users", :force => true do |t|
     t.string   "name"
-    t.string   "logo"
+    t.string   "login"
+    t.string   "passwd"
     t.datetime "created_at", :null => false
     t.datetime "updated_at", :null => false
   end

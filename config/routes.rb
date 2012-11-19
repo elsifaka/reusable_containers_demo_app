@@ -1,26 +1,20 @@
-ReusableContainersDemoApp::Application.routes.draw do
+Appblue::Application.routes.draw do
+  get "admin/index"
+  
+  get "site/index"
+  
+  get "site/rubrique"
+  
+  get "redirection/login"
+  
+  get "redirection/logout"
+  
+  resources :users
 
-  resources :partenaires
+  resources :articles
 
-  resources :container_navigations
+  resources :rubriques
 
-  resources :navigation_entries
-
-  scope path: "administration" do
-    root to: "administration#index", as: "administration_root"
-  end
-
-  match "misc/homepage" => "misc#homepage"
-
-  resources :navigations
-
-  resources :blog_posts
-
-  resources :containers
-
-  resources :entries
-
-  resources :private
   # The priority is based upon order of creation:
   # first created -> highest priority.
 
@@ -70,11 +64,16 @@ ReusableContainersDemoApp::Application.routes.draw do
 
   # You can have the root of your site routed with "root"
   # just remember to delete public/index.html.
-  #
-  # et on est sur de ne jamais arriver ici
-  root :to => 'administration#index'
+  # root :to => 'welcome#index'
+
+  root :to => 'site#index' 
+  
   # See how all your routes lay out with "rake routes"
+
   # This is a legacy wild controller route that's not recommended for RESTful applications.
   # Note: This route will make all actions in every controller accessible via GET requests.
   # match ':controller(/:action(/:id))(.:format)'
+  
+  match ':controller(/:action(/:id))(.:format)'
+  
 end

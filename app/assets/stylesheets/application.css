@@ -11,3 +11,139 @@
  *= require_self
  *= require_tree .
 */
+
+body
+{
+    color: #000;
+    background-color: #ccc; 
+}
+
+#contenaire
+{
+    background-color: #fff;
+    margin: 5px auto;
+    width: 900px;
+    min-height: 500px;
+    border: 1px solid #000;
+}
+#header
+{
+    background-color: #000;
+    margin:0px;
+    height: 100px;
+    color: #fff;
+    padding: 10px;
+    text-align: right;
+}
+
+#s_header
+{
+    background-color: #CfC;
+    margin:0px;
+    height: 100px;
+    color: #fff;
+    padding: 10px;
+    text-align: right;
+}
+
+#menu, #s_menu
+{
+    background-color: #f00;
+    margin:0px;
+    min-height: 50px;
+}
+.divclear
+{
+    clear: both;
+}
+#text-left
+{
+    float: left;
+    width: 415px;
+    height: 75px;
+    margin: 10px;
+    padding: 5px;
+}
+#text-right 
+{
+    float: left;
+    height: 75px;
+    width: 415px;
+    margin: 10px;
+    color: #f00;
+    
+}
+.foot
+{
+    text-align: center;
+    font-size: 11px;
+    font-weight: 700;
+}
+
+#menu
+{
+   text-align: center; 
+}
+
+#menu ul li
+{
+    list-style: none;
+    display: inline;
+}
+
+#menu ul li a:visited, #menu ul li a:active, #menu ul li a
+{
+    text-decoration: none;
+    padding: 5px;
+    border-right: 1px solid #000;
+    border-bottom: 1px solid #000;
+    background-color: #fff;
+    color: #000;
+}
+#menu ul li a:hover
+{
+    text-decoration: none;
+    padding: 5px;
+    border-right: 1px solid #000;
+    border-bottom: 1px solid #000;
+    background-color: #000;
+    color: #fff;
+}
+.commande
+{
+   text-align: right;
+    margin-right: 150px; 
+}
+
+.commande a
+{
+   padding:5px;
+   border-right: #000 1px solid ;
+   border-bottom: #000 1px solid ;
+   font-weight: 700;
+}
+.liste tr th
+{
+    font-weight: 700;
+    background-color: #000;
+    color: #fff;
+}
+
+.liste tr td
+{
+    border: 1px #000 solid;
+}
+
+.foot
+{
+    margin: 0 auto;
+    width: 900px;
+    text-align: center;
+}
+
+.link_a
+{
+     margin: 0 auto;
+    width: 900px;
+    text-align: right;
+}
